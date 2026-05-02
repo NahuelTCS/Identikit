@@ -5,7 +5,7 @@ body {
     font-family: "Lucida Console", Monaco, monospace;
     background-image: url('Img/watercolor-light-peach-background_23-2150293766.avif');
     background-size: cover ;
-    color: #333;
+    color: #000000;
     text-decoration: none;
     margin: 0;
     height: 100vh;
@@ -23,8 +23,14 @@ body {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(127, 81, 8, 0.1);
 }
+.contenedor-principal img { /*Imagen usada en index y sobre mi*/
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+}
 .contenedor-principal h2 { /*Subtitulos usados en index y sobre mi*/
-    color: #7f5108;
+    color: #694307;
     border-bottom: 2px solid #f1f1f1;
     padding-bottom: 10px;
     justify-content: center;
@@ -33,7 +39,7 @@ body {
 .contenedor-principal h1 { /*Título principal usado en Index*/
     font-size: 2.5rem;
     text-align: center;
-    color: #7f5108;
+    color: #62400a;
     border-bottom: 3px solid #f1f1f1;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -72,7 +78,7 @@ nav {/*Fondo de nav usado en todas las paginas*/
     background-color: peachpuff; 
 }
 .nav li:hover a {/*Color de hover para el texto de nav*/
-    color: gray;
+    color: rgb(147, 146, 146);
 }
 
 .nav a {/*Texto de nav*/
@@ -86,7 +92,7 @@ h1 {/*Título principal usado en Index*/
     text-align: center;
 }
 h1, h2 {/*Titulos de index*/ 
-    color: #1a2a6c;
+    color: #112263;
     border-bottom: 3px solid #f1f1f1;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -96,7 +102,7 @@ h1, h2 {/*Titulos de index*/
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .tabla-indice th {/*Header de la tabla index*/
@@ -109,20 +115,39 @@ h1, h2 {/*Titulos de index*/
 .tabla-indice td {/*Celdas de la tabla index*/
     padding: 15px;
     border:1px solid #ddd;
-    color:gray;
+    color:rgb(0, 0, 0);
 }
 
 .tabla-indice a {/*Enlaces dentro de la tabla */
-    color: #dd781a;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    background-color: #dd781a;
     border: 1px solid #dd781a;
     padding: 5px 10px;
     border-radius: 5px;
 }
 .tabla-indice a:hover {/*Hover enlaces dentro de la tabla*/
-    background-color: #dd781a;
-    color: white;
+    background-color: white;
+    color: #dd781a;
+}
+.paginas { /*Cuadro contenedor paginas index*/
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    gap: 20px;
+}
+.paginas h3 { /*Titulo paginas index*/
+    color: #071b69;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+}
+.paginas a img { /*Imagenes dentro de paginas index*/
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
 }
 .grid-intereses {/*Diseño Espacio Tarjeta Intereses*/
     display: flex;
@@ -155,14 +180,14 @@ h1, h2 {/*Titulos de index*/
 }
 .cuerpo-tarjeta h3 {/*Usado en intereses*/
     margin-top: 0;
-    color: #2c3e50;
+    color: black;
     border-bottom: 2px solid #f1f1f1;
     padding-bottom: 10px;
 }
 .cuerpo-tarjeta p {/*Usado en intereses*/
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5;
-    color: #666;
+    color: black;
 }
 .opciones-trivia a {/* Botones de trivia */
     display: block;
